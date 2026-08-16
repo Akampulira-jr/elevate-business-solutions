@@ -125,7 +125,7 @@ SEO and performance considerations include:
 Website performance and search visibility are monitored using Google Search Console and Lighthouse.
 ## 👨‍💻 Developer
 
-Designed and developed by **Rogers Akampulira**.
+Designed and developed by **Rogers Akampulira-Jr**.
 
 This project demonstrates practical skills in:
 
