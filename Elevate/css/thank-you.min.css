@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #2563eb;
+  --accent-color: #3b82f6;
+  --background-color: #f8fafc;
+  --surface-color: #ffffff;
+  --text-color: #334155;
+  --heading-color: #0f172a;
+  --border-color: #e2e8f0;
+  --shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+  --radius: 1rem;
+  --transition: 0.3s ease;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  background: linear-gradient(135deg, #eef5ff, #fff);
+  color: var(--text-color);
+}
+.thank-you {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.thank-you-card {
+  width: min(100%, 650px);
+  background: var(--surface-color);
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+.success-icon {
+  width: 90px;
+  height: 90px;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.thank-you-card h1 {
+  margin: 0 0 1rem;
+  color: var(--heading-color);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.thank-you-card p {
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.thank-you-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  background: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.btn:focus-visible,
+.btn:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 999px;
+  background: 0 0;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.btn-secondary:focus-visible,
+.btn-secondary:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .thank-you-card {
+    padding: 2rem 1.5rem;
+  }
+  .success-icon {
+    width: 75px;
+    height: 75px;
+    font-size: 2rem;
+  }
+  .thank-you-card h1 {
+    font-size: 2rem;
+  }
+  .thank-you-actions {
+    flex-direction: column;
+  }
+  .btn,
+  .btn-secondary {
+    width: 100%;
+  }
+}
